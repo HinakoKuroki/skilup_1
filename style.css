@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #ec715f;
+}
+
+.header-contents{
+    width: 1024px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.logo{
+    float: left;
+    height: 70px;
+}
+.nav-drawer{
+    display: none;
+}
+nav{
+    float: right;
+}
+
+.navigation-item{
+    list-style: none;
+    color: #fafafa;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 30px;
+    line-height: 70px;
+}
+.navigation-item a{
+    color: #fafafa;
+    text-decoration: none;
+}
+main{
+    
+}
+
+.main-visual{
+    background-image: url(img/mv.png);
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+}
+.main-visual-title{
+    font-size: 64px;
+    color: #fafafa;
+    margin-bottom: 10px;
+}
+
+.main-visual-text{
+    font-size: 20px;
+    color: #fafafa;
+}
+#portforio, #feature, #profile, #contact{
+    padding: 90px;
+    text-align: center;
+}
+
+.title{
+    font-size: 32px;
+    color: #000000;
+    /* margin-bottom: 8px; */
+}
+.title::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #ec715f;
+    margin: 8px auto 0;
+}
+.text{
+    margin: 30px auto;
+}
+#portforio{
+    text-align: center;
+    background-color: #eceff1;
+}
+
+.portforio-images{
+    width: 920px;
+    margin: 0 auto;
+}
+.portforio-image{
+    width: 300px;
+    height: 250px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+.portforio-image:nth-child(3n){
+    margin-right: 0;
+}
+.portforio-image:nth-child(4+n){
+    margin-bottom: 0;
+}
+.portforio-image:nth-child(1){
+    background-image: url(img/sketch.jpg);
+}
+.portforio-image:nth-child(2){
+    background-image: url(img/websuku.png);
+}
+.portforio-image:nth-child(3){
+    background-image: url(img/write.jpg);
+}
+.portforio-image:nth-child(4){
+    background-image: url(img/webcamp.png);
+}
+.portforio-image:nth-child(5){
+    background-image: url(img/talk.jpg);
+}
+.portforio-image:nth-child(6){
+    background-image: url(img/webcamp-mother.png);
+}
+
+.strengthes{
+    width: 980px;
+    margin: 0 auto;
+}
+.strength{
+    float: left;
+    width: 320px;
+    height: auto;
+    margin-right: 10px;
+}
+.strength:last-child{
+    margin-right: 0;
+}
+.strength-title{
+    margin: 10px auto;
+    font-size: 20px;
+}
+.strength-text{
+    font-size: 16px;
+}
+
+#profile{
+    background-color: #eceff1;
+}
+.profile-details{
+    margin: 0 auto;
+    width: 1024px;
+}
+.profile-image{
+    width: 512px;
+    float: left;
+}
+.profile-image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.profile-detail{
+    width: 512px;
+    float: left;
+    text-align: left;
+}
+.profile-detail-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+.profile-detail-title:first-child{
+    margin-top: 0;
+    
+}
+.profile-detail-text{
+    font-size: 16px;
+}
+
+.contact-details{
+    width: 800px;
+    margin: 0 auto;
+}
+.contact-detail{
+    width: 400px;
+    margin: 0 auto;
+    float: left;
+    text-align: center;
+    /* text-align: left; */
+}
+.contact-detail-container-right{
+    margin: 0 auto;
+    text-align: left;
+    width: 180px;
+}
+.contact-detail-container-left{
+    margin: 0 auto;
+    text-align: left;
+    width: 130px;
+}
+.contact-detail-title{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.contact-detail-title:first-child{
+    margin-top: 0;
+}
+.contact-detail-text a{
+    color: #000000;
+}
+.social{
+    margin: 0 auto;
+    width: 180px;
+}
+.social i{
+    margin-right: 30px;
+    float: left;
+}
+.social i:last-child{
+    margin-right: 0;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #ec715f;
+}
+
+.footer-text{
+    font-size: 16px;
+    color: #fafafa;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media screen and (max-width:767px){
+    .header-contents{
+        width: 100%;
+    }
+    .nav-drawer{
+        position: absolute;
+        display: block;
+        right: 20px;
+        top: 19px;
+    }
+    .fa-bars{
+        color: white;
+        /* line-height: 70px; */
+    }
+.navigation{
+    display: none;
+}
+main{
+    width: 100%;
+}
+.main-visual{
+    background-image: url(img/code.png);
+}
+.main-visual-title{
+    font-size: 40px;
+}
+.main-visual-text{
+    font-size: 18px;
+}
+
+.text{
+    font-size: 16px;
+    margin: 30px auto;
+}
+#portforio, #feature, #profile, #contact{
+    padding: 90px 5%;
+}
+.portforio-images{
+    width: 100%;
+    margin: 0 auto;
+}
+.portforio-image{
+    margin: 0 auto 10px;
+    float: none;
+}
+.portforio-image:nth-child(3n){
+    margin:auto;
+}
+.portforio-image:nth-child(2n-1){
+    display: none;
+}
+
+.strengthes{
+    width: 100%;
+}
+.strength{
+    float: none;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 10px;
+}
+.strength:last-child{
+    margin: 0 auto;
+}
+.strength i{
+    font-size: 60px;
+}
+
+.profile-details{
+    width: 100%;
+}
+.profile-image{
+    width: 100%;
+    height: 250px;
+    float: none;
+    margin-bottom: 20px;
+}
+.profile-detail{
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+.contact-details{
+    width: 100%;
+}
+.contact-detail{
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+.contact-detail-container-right{
+    text-align: center;
+    width: 100%;
+}
+.contact-detail-container-left{
+    text-align: center;
+    width: 100%;
+}
+.contact-detail-container-right .contact-detail-title{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.social{
+    width: 142px;
+}
+.social i{
+    margin-right: 8px;
+    font-size: 50px;
+}
+}
